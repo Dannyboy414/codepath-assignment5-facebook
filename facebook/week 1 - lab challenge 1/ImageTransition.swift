@@ -24,8 +24,7 @@ class ImageTransition: BaseTransition {
         movingImageView.clipsToBounds = feedViewController.selectedImageView.clipsToBounds
         movingImageView.contentMode = feedViewController.selectedImageView.contentMode
         
-        movingImageView.frame.origin.y -= feedViewController.scrollView.contentOffset.y
-        
+        containerView.backgroundColor = UIColor(white: 0.0, alpha: 0.75);
         containerView.addSubview(movingImageView)
         
         feedViewController.selectedImageView.alpha = 0
@@ -35,7 +34,8 @@ class ImageTransition: BaseTransition {
         UIView.animateWithDuration(duration, animations: {
             toViewController.view.alpha = 1
             
-            self.movingImageView.frame = photoViewController.imageView.frame
+            var frame = photoViewController.imageView.frame
+            self.movingImageView.frame = frame
             
             //            //change frame to match frame of future image view
             //            farmViewController.selectedImageView.frame = animalViewController.animalImageView.frame
@@ -43,6 +43,7 @@ class ImageTransition: BaseTransition {
             }) { (finished: Bool) -> Void in
                 photoViewController.imageView.alpha = 1
                 feedViewController.selectedImageView.alpha = 1
+                self.movingImageView.removeFromSuperview()
                 self.finish()
         }
     }

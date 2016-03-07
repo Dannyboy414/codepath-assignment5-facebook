@@ -13,10 +13,12 @@ class PhotoViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var doneButton: UIButton!
+    @IBOutlet weak var photoAction: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize = CGSize(width: 320, height: 1000)
+        scrollView.contentSize = CGSize(width: 320, height: 525)
         scrollView.delegate = self
         
         imageView.image = image
@@ -44,10 +46,31 @@ class PhotoViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewWillBeginDragging(scrollView: UIScrollView) {
         print("begin dragging")
         
-        UIView.animateWithDuration(0.05) { () -> Void in
-//            self.doneButton.alpha = 0
-//            self.photoActions.alpha = 0
+        UIView.animateWithDuration(0.1) { () -> Void in
+            self.doneButton.alpha = 0
+            self.photoAction.alpha = 0
         }
+    }
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        print("\(scrollView.contentOffset.y)")
+        if (scrollView.contentOffset.y >= 1) {
+            scrollView.setContentOffset(CGPointMake(0, 1), animated: false);
+        } else if (scrollView.contentOffset.y < -20) {
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
+    
+    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        UIView.animateWithDuration(0.1) { () -> Void in
+            self.doneButton.alpha = 1
+            self.photoAction.alpha = 1
+        }
+    }
+    
+    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView {
+        
+        return imageView
     }
     
     
