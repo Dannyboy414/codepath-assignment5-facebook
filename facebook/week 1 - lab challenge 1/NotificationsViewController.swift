@@ -1,9 +1,9 @@
 //
 //  NotificationsViewController.swift
-//  Week 1 - Lab Challenge 1
+//  Week 5 - Assignment 5
 //
-//  Created by Alvin Hsia on 2/3/16.
-//  Copyright © 2016 Alvin Hsia. All rights reserved.
+//  Created by Daniel Kim on 3/5/16.
+//  Copyright © 2016 Daniel Kim. All rights reserved.
 //
 
 import UIKit

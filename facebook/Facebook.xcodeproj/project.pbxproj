@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		749634541C8CBDAD00A10507 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749634521C8CBDAD00A10507 /* BaseTransition.swift */; };
+		749634551C8CBDAD00A10507 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749634531C8CBDAD00A10507 /* FadeTransition.swift */; };
+		749634571C8CBE8000A10507 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749634561C8CBE8000A10507 /* PhotoViewController.swift */; };
+		749634591C8CEFC700A10507 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749634581C8CEFC700A10507 /* ImageTransition.swift */; };
 		869EE8501C62F9B8007A2E65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869EE84F1C62F9B8007A2E65 /* AppDelegate.swift */; };
 		869EE8521C62F9B8007A2E65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869EE8511C62F9B8007A2E65 /* ViewController.swift */; };
 		869EE8571C62F9B8007A2E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 869EE8561C62F9B8007A2E65 /* Assets.xcassets */; };
@@ -18,7 +22,6 @@
 		869EE8821C6302F9007A2E65 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869EE8811C6302F9007A2E65 /* MoreViewController.swift */; };
 		869EE8841C63037A007A2E65 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869EE8831C63037A007A2E65 /* NotificationsViewController.swift */; };
 		869EE8861C630406007A2E65 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869EE8851C630406007A2E65 /* RequestViewController.swift */; };
-		86AA3CEC1C63088100B36601 /* ThrillistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA3CEB1C63088100B36601 /* ThrillistDetailViewController.swift */; };
 		86AA3CEE1C630A8600B36601 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86AA3CED1C630A8600B36601 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		749634521C8CBDAD00A10507 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = SOURCE_ROOT; };
+		749634531C8CBDAD00A10507 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = SOURCE_ROOT; };
+		749634561C8CBE8000A10507 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoViewController.swift; path = "week 1 - lab challenge 1/PhotoViewController.swift"; sourceTree = SOURCE_ROOT; };
+		749634581C8CEFC700A10507 /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
 		869EE84C1C62F9B8007A2E65 /* Week 1 - Lab Challenge 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week 1 - Lab Challenge 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		869EE84F1C62F9B8007A2E65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		869EE8511C62F9B8007A2E65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +64,6 @@
 		869EE8811C6302F9007A2E65 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreViewController.swift; path = ../MoreViewController.swift; sourceTree = "<group>"; };
 		869EE8831C63037A007A2E65 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		869EE8851C630406007A2E65 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
-		86AA3CEB1C63088100B36601 /* ThrillistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrillistDetailViewController.swift; sourceTree = "<group>"; };
 		86AA3CED1C630A8600B36601 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,9 +95,9 @@
 		869EE8431C62F9B8007A2E65 = {
 			isa = PBXGroup;
 			children = (
-				869EE84E1C62F9B8007A2E65 /* Week 1 - Lab Challenge 1 */,
-				869EE8631C62F9B8007A2E65 /* Week 1 - Lab Challenge 1Tests */,
-				869EE86E1C62F9B8007A2E65 /* Week 1 - Lab Challenge 1UITests */,
+				869EE84E1C62F9B8007A2E65 /* Week 5 Project */,
+				869EE8631C62F9B8007A2E65 /* Week 5 Test */,
+				869EE86E1C62F9B8007A2E65 /* Week 5 Test */,
 				869EE84D1C62F9B8007A2E65 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,40 +112,46 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		869EE84E1C62F9B8007A2E65 /* Week 1 - Lab Challenge 1 */ = {
+		869EE84E1C62F9B8007A2E65 /* Week 5 Project */ = {
 			isa = PBXGroup;
 			children = (
 				869EE84F1C62F9B8007A2E65 /* AppDelegate.swift */,
 				869EE8511C62F9B8007A2E65 /* ViewController.swift */,
 				869EE87D1C630001007A2E65 /* MessagesViewController.swift */,
 				869EE87F1C63024C007A2E65 /* FeedViewController.swift */,
+				749634561C8CBE8000A10507 /* PhotoViewController.swift */,
+				749634521C8CBDAD00A10507 /* BaseTransition.swift */,
+				749634531C8CBDAD00A10507 /* FadeTransition.swift */,
+				749634581C8CEFC700A10507 /* ImageTransition.swift */,
 				869EE8811C6302F9007A2E65 /* MoreViewController.swift */,
 				869EE8831C63037A007A2E65 /* NotificationsViewController.swift */,
 				869EE8851C630406007A2E65 /* RequestViewController.swift */,
-				86AA3CEB1C63088100B36601 /* ThrillistDetailViewController.swift */,
 				86AA3CED1C630A8600B36601 /* Main.storyboard */,
 				869EE8561C62F9B8007A2E65 /* Assets.xcassets */,
 				869EE8581C62F9B8007A2E65 /* LaunchScreen.storyboard */,
 				869EE85B1C62F9B8007A2E65 /* Info.plist */,
 			);
+			name = "Week 5 Project";
 			path = "Week 1 - Lab Challenge 1";
 			sourceTree = "<group>";
 		};
-		869EE8631C62F9B8007A2E65 /* Week 1 - Lab Challenge 1Tests */ = {
+		869EE8631C62F9B8007A2E65 /* Week 5 Test */ = {
 			isa = PBXGroup;
 			children = (
 				869EE8641C62F9B8007A2E65 /* Week_1___Lab_Challenge_1Tests.swift */,
 				869EE8661C62F9B8007A2E65 /* Info.plist */,
 			);
+			name = "Week 5 Test";
 			path = "Week 1 - Lab Challenge 1Tests";
 			sourceTree = "<group>";
 		};
-		869EE86E1C62F9B8007A2E65 /* Week 1 - Lab Challenge 1UITests */ = {
+		869EE86E1C62F9B8007A2E65 /* Week 5 Test */ = {
 			isa = PBXGroup;
 			children = (
 				869EE86F1C62F9B8007A2E65 /* Week_1___Lab_Challenge_1UITests.swift */,
 				869EE8711C62F9B8007A2E65 /* Info.plist */,
 			);
+			name = "Week 5 Test";
 			path = "Week 1 - Lab Challenge 1UITests";
 			sourceTree = "<group>";
 		};
@@ -278,13 +290,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				869EE8821C6302F9007A2E65 /* MoreViewController.swift in Sources */,
+				749634551C8CBDAD00A10507 /* FadeTransition.swift in Sources */,
+				749634591C8CEFC700A10507 /* ImageTransition.swift in Sources */,
 				869EE87E1C630001007A2E65 /* MessagesViewController.swift in Sources */,
 				869EE8861C630406007A2E65 /* RequestViewController.swift in Sources */,
 				869EE8521C62F9B8007A2E65 /* ViewController.swift in Sources */,
 				869EE8841C63037A007A2E65 /* NotificationsViewController.swift in Sources */,
+				749634541C8CBDAD00A10507 /* BaseTransition.swift in Sources */,
 				869EE8801C63024C007A2E65 /* FeedViewController.swift in Sources */,
 				869EE8501C62F9B8007A2E65 /* AppDelegate.swift in Sources */,
-				86AA3CEC1C63088100B36601 /* ThrillistDetailViewController.swift in Sources */,
+				749634571C8CBE8000A10507 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

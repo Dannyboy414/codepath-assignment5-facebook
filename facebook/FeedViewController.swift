@@ -1,25 +1,28 @@
 //
 //  FeedViewController.swift
-//  Week 1 - Lab Challenge 1
+//  Week 5 - Assignment 5
 //
-//  Created by Alvin Hsia on 2/3/16.
-//  Copyright © 2016 Alvin Hsia. All rights reserved.
+//  Created by Daniel Kim on 3/5/16.
+//  Copyright © 2016 Daniel Kim. All rights reserved.
 //
 
 import UIKit
 
 class FeedViewController: UIViewController {
-
-    @IBOutlet weak var FeedScrollView: UIScrollView!
-    @IBOutlet weak var FeedImageView: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var feedImageView: UIImageView!
+    @IBOutlet weak var wedding1ImageView: UIImageView!
+    
+    var selectedImageView: UIImageView!
+    
+    var imageTransition: ImageTransition!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBarHidden = true
-        
-        FeedScrollView.contentSize = FeedImageView.image!.size
+        scrollView.contentSize = CGSize(width: 320, height: feedImageView.image!.size.height+110)
 
+        imageTransition = ImageTransition()
         // Do any additional setup after loading the view.
     }
 
@@ -28,7 +31,46 @@ class FeedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "openPhotoSegue") {
+            let photoViewController = segue.destinationViewController as! PhotoViewController
+            let imageView = sender.view as! UIImageView;
+            selectedImageView = imageView
+            
+            photoViewController.image = imageView.image
+            
+            photoViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+            photoViewController.transitioningDelegate = imageTransition
+            photoViewController.view.layoutIfNeeded()
 
+        }
+    }
+
+    @IBAction func tapWedding1ImageView(sender: AnyObject) {
+        performSegueWithIdentifier("openPhotoSegue", sender: sender);
+    }
+    
+    @IBAction func tapWedding2ImageView(sender: AnyObject) {
+        performSegueWithIdentifier("openPhotoSegue", sender: sender);
+    }
+    
+    @IBAction func tapWedding3ImageView(sender: AnyObject) {
+        performSegueWithIdentifier("openPhotoSegue", sender: sender);
+    }
+    
+    @IBAction func tapWedding4ImageView(sender: AnyObject) {
+        performSegueWithIdentifier("openPhotoSegue", sender: sender);
+    }
+    
+    @IBAction func tapWedding5ImageView(sender: AnyObject) {
+        performSegueWithIdentifier("openPhotoSegue", sender: sender);
+    }
+    
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
