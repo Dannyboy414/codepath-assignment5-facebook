@@ -56,7 +56,7 @@ class PhotoViewController: UIViewController, UIScrollViewDelegate {
         print("\(scrollView.contentOffset.y)")
         if (scrollView.contentOffset.y >= 1) {
             scrollView.setContentOffset(CGPointMake(0, 1), animated: false);
-        } else if (scrollView.contentOffset.y < -20) {
+        } else if (scrollView.contentOffset.y < -30) {
             dismissViewControllerAnimated(true, completion: nil)
         }
     }
@@ -68,8 +68,7 @@ class PhotoViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView {
-        
+    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
         return imageView
     }
     
